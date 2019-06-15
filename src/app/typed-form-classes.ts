@@ -1,8 +1,8 @@
 import { FormGroup, AbstractControl, ValidatorFn, AbstractControlOptions, AsyncValidatorFn, FormControl, FormArray } from '@angular/forms';
 import { Observable } from 'rxjs';
 
-type ValidatorOrOptsType = ValidatorFn | ValidatorFn[] | AbstractControlOptions | null;
-type AsyncValidatorType = AsyncValidatorFn | AsyncValidatorFn[] | null;
+export type ValidatorOrOptsType = ValidatorFn | ValidatorFn[] | AbstractControlOptions | null;
+export type AsyncValidatorType = AsyncValidatorFn | AsyncValidatorFn[] | null;
 
 export abstract class TypedAbstractControl<T> extends AbstractControl {
   // Would I need to just recreate this abstract class with the generic as the type instead of `any`s?
